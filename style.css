@@ -241,7 +241,7 @@ footer {
     transition: box-shadow 0.3s;
 }
 .questions.bleu details{
-    border: 2px solid transparent;
+     border: 2px solid transparent;
     transition: box-shadow 0.3s;
 }
 
@@ -450,3 +450,4 @@ padding-top: 40px;
 #conclusion{
     background-color: #2d253a;
 }
+

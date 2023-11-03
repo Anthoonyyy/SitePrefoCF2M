@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@1,6..96&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/*body index.html*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*barre de naviguation*/
+nav {
+    width: 100%;
+    background: linear-gradient(90deg, hsla(237, 20%, 19%, 1) 32%, hsla(296, 24%, 12%, 1) 74%);
+    padding: 1px;
+    margin: 0px;
+}
+
+header {
+    margin: 0px;
+}
+
+/*Sous menu  en dessous d'entreprise(interview,rapport) etc */
+.sousMenu a {
+
+    text-align: left;
+    line-height: 2px;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+    color: #ffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+/*enlever puce devant les listes*/
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/*Centrer la nav au centre*/
+header nav {
+    text-align: center;
+    margin: 0px;
+}
+
+/*Barre de naviguation*/
+header li {
+    display: inline;
+    margin-right: 40px;
+    position: relative;
+    margin-left: 0px;
+
+}
+
+/* Style pour le menu déroulant */
+header ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 85px;
+    border-radius: 3px;
+    height: 80px;
+      
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 50px;
+    position: relative;
+}
+
+li:hover>ul {
+    display: block;
+    text-align: left;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: linear-gradient(90deg, rgba(39, 40, 58, 0.707) 32%, rgba(37, 23, 38, 0.707) 74%);
+
+}
+
+ul a {
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    font-style: italic;
+}
+/*Sous menu interview-rapport, ajuster le texte*/
+header ul li ul li {
+    display: block;
+    margin: 0;
+    padding-top: 15px;
+    text-align: center;
+}
+
+
+#pageAccueil #introduction {
+    display: inline-block;
+}
+
+/*Projet preformation sur la page d'accueil*/
+#Introduction {
+    font-size: 80px;
+    text-align: center;
+    padding: 100px;
+    font-family: 'Lalezar', sans-serif;
+    ;
+    color: #ffff;
+}
+
+/*Fond index.html*/
+#fondNoir {
+    background-image: url(images/neon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+}
+
+/*Projet préformation de la page d'accueil*/
+#présentation {
+    color: #d9c5b2;
+    text-align: center;
+    font-family: "Tilt neon", sans-serif;
+    font-size: 100px;
+}
+
+/*Footer de la page d'accueil*/
+footer {
+    color: white;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/*Représente les questions de l'interview*/
+.questions summary {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+
+}
+
+
+.questions {
+
+    border-radius: 20px;
+    width: 330px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    height: auto;
+    flex-wrap: nowrap;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/*Affiche une barre de défilement pour les réponses longues*/
+.questions p {
+    color: white;
+    max-height: 300px;
+    overflow-y: auto;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    padding: 20px 20px;
+    line-height: 20px;
+
+
+}
+
+/* Largeur de la barre de défilement */
+::-webkit-scrollbar {
+    width: 12px;
+
+}
+
+/* Couleur de fond de la piste de la barre de défilement */
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+/* Couleur du curseur de la barre de défilement */
+::-webkit-scrollbar-thumb {
+    background: #000000;
+
+}
+
+/*Espace entre les questions*/
+.questions.rose  {
+    margin-bottom: 50px;
+    border-radius: 10px;
+    }
+   
+
+.questions.bleu {
+    margin-bottom: 50px;
+    transition: box-shadow 0.3s;
+    border-radius: 10px;
+}
+
+/*Effet néon bleu au survol pour les elements avec la classe questions et bleu*/
+.questions.bleu details:hover {
+    box-shadow: 0 0 10px #2f7eac, 0 0 20px #2f7eac, 0 0 30px #2f7eac, 0 0 40px #2f7eac, 0 0 50px #2f7eac;
+}
+
+
+/*Transition pour l'effet au survol rose*/
+.questions.rose details {
+    border: 2px solid transparent;
+    transition: box-shadow 0.3s;
+    
+
+}
+
+/*Effet néon rose au survol pour les elements avec la classe questions et rose*/
+.questions.rose details:hover {
+    box-shadow: 0 0 10px #9c296a, 0 0 20px #9c296a, 0 0 30px #9c296a, 0 0 40px #9c296a, 0 0 50px #9c296a;
+}
+
+/*Marqueur devant les questions interview*/
+.questions details summary::marker {
+    color: #ffff;
+
+}
+#photoAgnes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Image dans la div photoAgnes*/
+#photoAgnes img {
+    width: 300px;
+    height: 300px;
+    border-radius: 60px;
+    padding: 5px;
+    margin-left: 120px;
+    margin-top: 50px;
+    margin-right: 20px;
+  
+
+}
+
+/*balise p dans la div avec l'id photoAgnes*/
+#photoAgnes p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    border: 5px solid transparent;
+    margin: 20px 20px;
+   
+}
+
+/*Fond interview*/
+#fondInterview {
+    background-color: #2d253a;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*Body page rapport*/
+#pageRapport {
+    background-color: #2d253a;
+    margin: 0;
+    padding: 0;
+}
+/*Tous les titres de la page rapport.html*/
+#presentationEntreprise h2, #organigramme h1,#coordonnéesEntreprise h2 {
+    color: #ffff;
+    text-align: center;
+    padding-top: 20px;
+    font-style: italic;
+    font-family: 'Kurale', serif;
+margin-top: 35px;
+    font-size: 25px;
+}
+/*Tous les paragraphes de la section présentation entreprise rapport.html*/
+#presentationEntreprise p {
+    color: #ffffff;
+    text-align: justify;
+    padding-top: 20px;
+    font-size: 13px;
+    font-family: 'Merriweather', serif;
+    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+/*Lien présent dans la section présentation entreprise de la page rapport*/
+#presentationEntreprise a {
+    text-decoration: none;
+    color: #FAEBD7;
+    border: 1px solid transparent;
+
+}
+/*Au survol du lien de la section présentation entreprise, effet néon bleu*/
+#presentationEntreprise a:hover {
+    box-shadow: 0 0 10px #2f7eac,
+        0 0 20px #2f7eac,
+        0 0 30px #2f7eac,
+        0 0 40px #2f7eac,
+        0 0 50px #2f7eac;
+}
+
+
+/*Image organigramme*/
+#organigramme img {
+   
+    margin-left: 420px;
+    margin-right: 250px;
+   
+}
+/*Barre de séparation animé*/
+hr {
+    position: relative;
+     /* Supprimer la bordure par défaut */
+    border: none;
+     /* Hauteur de la ligne */ 
+    height: 2px;
+    /* Fond transparent */
+    background: transparent;
+   
+}
+/* s'applique à un pseudo-élément avant l'élément <hr>, ce qui permet d'ajouter du contenu et des styles supplémentaires à cet élément.*/
+hr::before {
+    content: "";
+    /*Cela positionne le pseudo-élément de manière absolue par rapport à son premier parent qui a une position relative*/
+    position: absolute;
+    /*Cela place le coin supérieur gauche du pseudo-élément au coin supérieur gauche de son parent*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, hsla(326, 58%, 39%, 1) 18%, hsla(202, 57%, 43%, 1) 79%);
+    animation: borderAnimation 2s linear infinite;
+    /* Animation de la bordure */
+}
+
+@keyframes borderAnimation {
+    /*0% représente le début de l'animation*/
+    0% {
+        left: -100%;
+    }
+/*Représente la fin de l'animation*/
+    100% {
+        left: 100%;
+    }
+}
+
+iframe{
+    margin-left: 350px;
+    margin-right: 100px;
+   
+}
+
+#coordonnéesEntreprise p{
+   color: #FAEBD7;
+   font-family: 'Merriweather', serif;
+   font-size: 15px;
+   text-align: center;
+}
+
+/*Page texte*/
+
+/*Body de la page texte*/
+#pageTexte{
+    background-color: #2d253a;
+}
+
+/*Titre du texte*/
+#texteFrancais h1{
+color: #ffffff;
+text-align: center;
+font-family: 'Marcellus', serif;
+padding-top: 40px;
+}
+/*Paragraphe de la section texteFrancais page texte*/
+#texteFrancais p{
+    color: #ffffff;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 30px;
+    text-align: justify;
+    font-family: 'Assistant', sans-serif;
+    font-size: 15px;
+
+}
+
+#imageTexte img{
+    width: 200px;
+    height: 200px;
+    margin-left: 18%;
+    margin-top: 30px;
+    border-radius: 15px;
+    /*Ombre pour les images*/
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+}
+
+/*               Page Galerie            */
+
+/*Body de la page galerie*/
+
+#galeriePhoto{
+    background-color: #2d253a;
+}
+
+#galerie h1{
+    color: #ffffff;
+    text-align: center;
+}
+
+
+/*              Page Conclusion            */
+
+/*Body page conclusion */
+
+#conclusion{
+    background-color: #2d253a;
+}

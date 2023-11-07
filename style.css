@@ -18,6 +18,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -443,13 +448,39 @@ padding-top: 40px;
 #galerie h1{
     color: #ffffff;
     text-align: center;
+    font-family: 'Bubblegum Sans', sans-serif;
+    font-size: 45px;
+  letter-spacing: 2px;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  
+  
 }
+/*Utilisation d'un span pour séparer le titre galerie photo pour pouvoir appliquer un effet au survol différent*/
+#galerie #motGalerie:hover{
+    text-shadow: 0 0 10px #2f7eac,
+        0 0 20px #2f7eac,
+        0 0 30px #2f7eac,
+        0 0 40px #2f7eac,
+        0 0 50px #2f7eac;
+        transition: text-shadow 0.3s
+}
+#galerie h1 #motPhoto:hover{
+    text-shadow: 0 0 10px #9c296a,
+        0 0 20px #9c296a,
+        0 0 30px #9c296a,
+        0 0 40px #9c296a,
+        0 0 50px #9c296a;
+        transition: text-shadow 0.3s
+}
+/*Photos de la page galerie*/
 #galerie img{
     width: 300px;
     height: 400px;
     margin: 20px;
  border-radius: 40px;
  box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+ margin-left: 25px;
 }
 
 
@@ -465,6 +496,10 @@ padding-top: 40px;
 #texteConclusion h1{
     color: #ffff;
     text-align: center;
+    font-family: 'Kurale', serif;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: 40px;
 }
 
 #texteConclusion p{
@@ -472,4 +507,7 @@ padding-top: 40px;
     text-align: justify;
     margin-left: 50px;
     margin-right: 50px;
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+padding-bottom: 10px;
 }

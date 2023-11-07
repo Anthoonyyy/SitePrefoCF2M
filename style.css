@@ -91,7 +91,7 @@ header ul li {
     margin: 0 50px;
     position: relative;
 }
-
+/*Cible l'ul juste après un li*/
 li:hover>ul {
     display: block;
     text-align: left;
@@ -179,9 +179,7 @@ footer {
     flex-wrap: nowrap;
     font-family: 'Lato', sans-serif;
     font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+   
 }
 
 /*Affiche une barre de défilement pour les réponses longues*/
@@ -222,10 +220,9 @@ footer {
     border-radius: 10px;
     }
    
-
+/*Les élèments qui ont la classe questions et bleu*/
 .questions.bleu {
     margin-bottom: 50px;
-    
     border-radius: 10px;
 }
 
@@ -240,6 +237,7 @@ footer {
     border: 2px solid transparent;
     transition: box-shadow 0.3s;
 }
+/*Transition pour l'effet au survol bleu*/
 .questions.bleu details{
      border: 2px solid transparent;
     transition: box-shadow 0.3s;
@@ -372,11 +370,11 @@ hr::before {
 @keyframes borderAnimation {
     /*0% représente le début de l'animation*/
     0% {
-        left: -100%;
+        left: -100%; /* l'élément est déplacé vers la gauche, en dehors de sa position d'origine, à 100% de la largeur de son conteneur.*/
     }
 /*Représente la fin de l'animation*/
     100% {
-        left: 100%;
+        left: 100%; /*l'élément est déplacé complètement vers la droite, à 100% de la largeur de son conteneur. */
     }
 }
 
@@ -385,7 +383,7 @@ iframe{
     margin-right: 100px;
    
 }
-
+/*Paragraphe de la section coordonnéesEntreprise page rapport*/
 #coordonnéesEntreprise p{
    color: #FAEBD7;
    font-family: 'Merriweather', serif;
@@ -418,7 +416,7 @@ padding-top: 40px;
     font-size: 15px;
 
 }
-
+/*Image de la page texte*/
 #imageTexte img{
     width: 200px;
     height: 200px;
@@ -459,3 +457,14 @@ padding-top: 40px;
     background-color: #2d253a;
 }
 
+#texteConclusion h1{
+    color: #ffff;
+    text-align: center;
+}
+
+#texteConclusion p{
+    color: #ffff;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+}

@@ -436,6 +436,24 @@ padding-top: 40px;
     /*Ombre pour les images*/
     box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
 }
+/*Au survol de la photo d'ada, effet néon bleu*/
+#imageTexte  #Adaphoto:hover{
+    box-shadow: 0 0 10px #2f7eac,
+        0 0 20px #2f7eac,
+        0 0 30px #2f7eac,
+        0 0 40px #2f7eac,
+        0 0 50px #2f7eac;
+        transition: box-shadow 0.3s;
+}
+/*Au survol de la photo d'Hedy, effet néon rose*/
+#imageTexte  #Hedyphoto:hover{
+    box-shadow: 0 0 10px #9c296a,
+        0 0 20px #9c296a,
+        0 0 30px #9c296a,
+        0 0 40px #9c296a,
+        0 0 50px #9c296a;
+        transition: box-shadow 0.3s;
+}
 
 /*               Page Galerie            */
 

@@ -268,9 +268,10 @@ footer {
     margin-top: 50px;
     margin-right: 20px;
     box-shadow: 0 0 10px #9c296a,
-        0 0 20px #9c296a,
+        0 0 20px #2f7eac,
         0 0 30px #9c296a,
-        0 0 40px #9c296a;
+        0 0 40px #2f7eac,
+        0 0 50px #9c296a;
        
         transition: box-shadow 0.3s;
       

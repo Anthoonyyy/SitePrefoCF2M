@@ -263,10 +263,17 @@ footer {
     width: 300px;
     height: 300px;
     border-radius: 60px;
-    padding: 5px;
+    
     margin-left: 120px;
     margin-top: 50px;
     margin-right: 20px;
+    box-shadow: 0 0 10px #9c296a,
+        0 0 20px #9c296a,
+        0 0 30px #9c296a,
+        0 0 40px #9c296a;
+       
+        transition: box-shadow 0.3s;
+      
    
 }
 
@@ -275,7 +282,7 @@ footer {
     color: #ffffff;
     text-align: center;
     font-size: 16px;
-    border: 5px solid transparent;
+    
     margin: 20px 20px;
     font-family: 'Josefin Sans', sans-serif;
    
@@ -418,7 +425,7 @@ padding-top: 40px;
 
 }
 
-#texteFrancais h1 #texteBleu:hover{
+#texteFrancais h1 #texteBleu{
     text-shadow: 0 0 10px #2f7eac,
         0 0 20px #2f7eac,
         0 0 30px #2f7eac,
@@ -427,7 +434,7 @@ padding-top: 40px;
         transition: text-shadow 0.3s
 }
 
-#texteFrancais h1 #texteRose:hover{
+#texteFrancais h1 #texteRose{
     text-shadow: 0 0 10px #9c296a,
         0 0 20px #9c296a,
         0 0 30px #9c296a,
@@ -436,7 +443,15 @@ padding-top: 40px;
         transition: text-shadow 0.3s
 }
 
-
+#texteFrancais p #L{
+    font-size: 25px;
+    text-shadow: 0 0 10px #9c296a,
+        0 0 20px #9c296a,
+        0 0 30px #9c296a,
+        0 0 40px #9c296a,
+        0 0 50px #9c296a;
+        transition: text-shadow 0.3s
+}
 /*Image de la page texte*/
 #imageTexte img{
     width: 200px;
@@ -486,7 +501,7 @@ padding-top: 40px;
   
 }
 /*Utilisation d'un span pour séparer le titre galerie photo pour pouvoir appliquer un effet au survol différent*/
-#galerie #motGalerie:hover{
+#galerie #motGalerie{
     text-shadow: 0 0 10px #2f7eac,
         0 0 20px #2f7eac,
         0 0 30px #2f7eac,
@@ -494,7 +509,7 @@ padding-top: 40px;
         0 0 50px #2f7eac;
         transition: text-shadow 0.3s
 }
-#galerie h1 #motPhoto:hover{
+#galerie h1 #motPhoto{
     text-shadow: 0 0 10px #9c296a,
         0 0 20px #9c296a,
         0 0 30px #9c296a,
@@ -542,7 +557,7 @@ padding-top: 40px;
 padding-bottom: 10px;
 }
 
-#texteConclusion h1 #conclusionBleu:hover{
+#texteConclusion h1 #conclusionBleu{
     text-shadow: 0 0 10px #2f7eac,
         0 0 20px #2f7eac,
         0 0 30px #2f7eac,
@@ -551,7 +566,7 @@ padding-bottom: 10px;
         transition: text-shadow 0.3s
 }
 
-#texteConclusion h1 #conclusionRose:hover{
+#texteConclusion h1 #conclusionRose{
     text-shadow: 0 0 10px #9c296a,
     0 0 20px #9c296a,
     0 0 30px #9c296a,
@@ -559,3 +574,16 @@ padding-bottom: 10px;
     0 0 50px #9c296a;
     transition: text-shadow 0.3s
 }
+
+
+
+#texteConclusion #P{
+    font-size: 25px;
+    text-shadow: 0 0 10px #3eb8ff,
+    0 0 20px #3eb8ff,
+    0 0 30px #3eb8ff,
+    0 0 40px #3eb8ff,
+    0 0 50px #3eb8ff;
+    transition: text-shadow 0.3s
+}
+

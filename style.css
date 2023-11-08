@@ -130,11 +130,11 @@ header ul li ul li {
 
 /*Projet preformation sur la page d'accueil*/
 #Introduction {
-    font-size: 80px;
+    font-size: 90px;
     text-align: center;
     padding: 100px;
-    font-family: 'Lalezar', sans-serif;
-    ;
+    font-family: 'Bubblegum Sans', sans-serif;
+    
     color: #ffff;
 }
 
@@ -281,9 +281,10 @@ footer {
 #photoAgnes p {
     color: #ffffff;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     border: 5px solid transparent;
     margin: 20px 20px;
+    font-family: 'Josefin Sans', sans-serif;
    
 }
 
@@ -307,9 +308,10 @@ footer {
     text-align: center;
     padding-top: 20px;
     font-style: italic;
-    font-family: 'Kurale', serif;
+    font-family: 'Bubblegum Sans', sans-serif;
 margin-top: 35px;
     font-size: 25px;
+    letter-spacing: 1px;
 }
 /*Tous les paragraphes de la section présentation entreprise rapport.html*/
 #presentationEntreprise p {
@@ -317,10 +319,10 @@ margin-top: 35px;
     text-align: justify;
     padding-top: 20px;
     font-size: 13px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Josefin Sans', sans-serif;
     margin: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 130px;
+    margin-right: 130px;
 }
 /*Lien présent dans la section présentation entreprise de la page rapport*/
 #presentationEntreprise a {
@@ -366,7 +368,7 @@ hr::before {
     /*Cela place le coin supérieur gauche du pseudo-élément au coin supérieur gauche de son parent*/
     top: 0;
     left: 0;
-    width: 100%;
+    width:50%;
     height: 100%;
     background: linear-gradient(270deg, hsla(326, 58%, 39%, 1) 18%, hsla(202, 57%, 43%, 1) 79%);
     animation: borderAnimation 2s linear infinite;
@@ -392,7 +394,7 @@ iframe{
 /*Paragraphe de la section coordonnéesEntreprise page rapport*/
 #coordonnéesEntreprise p{
    color: #FAEBD7;
-   font-family: 'Merriweather', serif;
+   font-family: 'Josefin Sans', sans-serif;
    font-size: 15px;
    text-align: center;
 }
@@ -408,22 +410,38 @@ iframe{
 #texteFrancais h1{
 color: #ffffff;
 text-align: center;
-font-family: 'Marcellus', serif;
+font-family: 'Bubblegum Sans', sans-serif;
 padding-top: 40px;
 }
 /*Paragraphe de la section texteFrancais page texte*/
 #texteFrancais p{
     color: #ffffff;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 140px;
+    margin-right: 140px;
     padding-top: 30px;
     text-align: justify;
-    font-family: 'Assistant', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 15px;
 
 }
 
+#texteFrancais h1 #texteBleu:hover{
+    text-shadow: 0 0 10px #2f7eac,
+        0 0 20px #2f7eac,
+        0 0 30px #2f7eac,
+        0 0 40px #2f7eac,
+        0 0 50px #2f7eac;
+        transition: text-shadow 0.3s
+}
 
+#texteFrancais h1 #texteRose:hover{
+    text-shadow: 0 0 10px #9c296a,
+        0 0 20px #9c296a,
+        0 0 30px #9c296a,
+        0 0 40px #9c296a,
+        0 0 50px #9c296a;
+        transition: text-shadow 0.3s
+}
 
 
 /*Image de la page texte*/
@@ -515,7 +533,7 @@ padding-top: 40px;
 #texteConclusion h1{
     color: #ffff;
     text-align: center;
-    font-family: 'Kurale', serif;
+    font-family: 'Bubblegum Sans', sans-serif;
     padding-top: 20px;
     padding-bottom: 15px;
     font-size: 40px;
@@ -524,9 +542,27 @@ padding-top: 40px;
 #texteConclusion p{
     color: #ffff;
     text-align: justify;
-    margin-left: 50px;
-    margin-right: 50px;
-    font-family: 'Merriweather', serif;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 14px;
 padding-bottom: 10px;
+}
+
+#texteConclusion h1 #conclusionBleu:hover{
+    text-shadow: 0 0 10px #2f7eac,
+        0 0 20px #2f7eac,
+        0 0 30px #2f7eac,
+        0 0 40px #2f7eac,
+        0 0 50px #2f7eac;
+        transition: text-shadow 0.3s
+}
+
+#texteConclusion h1 #conclusionRose:hover{
+    text-shadow: 0 0 10px #9c296a,
+    0 0 20px #9c296a,
+    0 0 30px #9c296a,
+    0 0 40px #9c296a,
+    0 0 50px #9c296a;
+    transition: text-shadow 0.3s
 }

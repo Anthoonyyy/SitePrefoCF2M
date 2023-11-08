@@ -79,45 +79,45 @@ header li {
 
 }
 
-/* Style pour le menu déroulant */
+/* cible le ul imbriqué dans un ul*/
 header ul ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
+    display: none;/*Permet de cacher les ul imbriqués (sous-menu)*/
+    position: absolute;/*Permet de le positionner par rapport a son parent qui a une position relative*/
+    top: 100%;/*Permet de positionner les ul imnriqués juste en dessous de l'élèment parent*/
+    left: 0;/*Place les ul imbriqués tout à gauche de leur élèments parents(les premiers ul accueil etc)*/
     width: 85px;
     border-radius: 3px;
     height: 80px;
       
 }
-
+/*cible les li à l'intérieur d'un ul aussi à l'intérieur d'un header (accueil, entreprise etc)*/
 header ul li {
-    display: inline-block;
+    display: inline-block;/*Permet d'afficher les li les uns à côté des autres*/
     margin: 0 50px;
     position: relative;
 }
-/*Cible l'ul juste après un li*/
+/*Cible l'ul juste après un li */
 li:hover>ul {
-    display: block;
+    display: block;/*Au survol, les sous-menus apparaissent grâce au display block(display:none les avaient cachés)*/
     text-align: left;
     position: absolute;
-    top: 100%;
+    top: 100%;/*Permet de positionner les sous listes juste en dessous de leur élèment parents*/
     left: 0;
     background: linear-gradient(90deg, rgba(39, 40, 58, 0.707) 32%, rgba(37, 23, 38, 0.707) 74%);
 
 }
-/*Représente accueil, entreprise, expo, dans la barre de nav*/
+/*Représente les liens à l'intérieur des listes à puces*/
 ul a {
-    text-decoration: none;
+    text-decoration: none;/*Supprime le soulignement par défaut des liens*/
     color: #ffff;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
     font-size: 17px;
     font-style: italic;
 }
-/*Sous menu interview-rapport, ajuster le texte*/
+/*Cible les li qui sont situés dans une sous liste ul qui est à l'intérieur d'un li qui se trouvent à l'intérieur d'un header*/
 header ul li ul li {
-    display: block;
+    display: block;/*Affiche les sous-menus les uns en dessous des autres*/
     margin: 0;
     padding-top: 15px;
     text-align: center;
@@ -141,8 +141,8 @@ header ul li ul li {
 /*Fond index.html*/
 #fondNoir {
     background-image: url(images/neon.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-repeat: no-repeat;/*Permet que l'image ne se répète pas à l'infini*/
+    background-position: center;/*Permet de positionner l'image*/
     background-size: 100%;
     
 }
@@ -172,7 +172,7 @@ footer {
 
 }
 
-
+/*Div qui ont la classe questions de la page interview*/
 .questions {
 
     border-radius: 20px;
@@ -181,33 +181,32 @@ footer {
     background-color: rgba(0, 0, 0, 0.3);
     text-align: center;
     height: auto;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap;/*Empeche le texte de continuer sur la ligne suivante si il n'y a pas assez d'espace*/
     font-family: 'Lato', sans-serif;
     font-size: 15px;
    
 }
 
-/*Affiche une barre de défilement pour les réponses longues*/
+/*Cible les élèments p(paragraphes) qui sont à l'intérieur des div avec la classe questions*/
 .questions p {
     color: white;
-    max-height: 300px;
-    overflow-y: auto;
+    max-height: 300px;/*Fixe la hauteur maximal à 300px*/
+    overflow-y: auto;/*Cela ajoute une barre de défilement vertical si le contenu dépasse la hauteur de 300px*/
     text-align: center;
     font-family: 'Arial', sans-serif;
     font-size: 16px;
     padding: 20px 20px;
     line-height: 20px;
 
-
 }
 
-/* Largeur de la barre de défilement */
+/* Cible la barre de défilement chrome avec le  préfixe webkit */
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 12px;/*Determine la largeur de la barre de défilement*/
 
 }
 
-/* Couleur de fond de la piste de la barre de défilement */
+/* Permet de modifier la couleur d'arrière plan'de la barre de défilement  */
 ::-webkit-scrollbar-track {
     background-color: rgba(0, 0, 0, 0.3);
 
@@ -219,13 +218,13 @@ footer {
 
 }
 
-/*Espace entre les questions*/
+/*Permet d'espacer les divs avec la classe questions et rose des divs de la classe questions et bleu*/
 .questions.rose  {
     margin-bottom: 50px;
     border-radius: 10px;
     }
    
-/*Les élèments qui ont la classe questions et bleu*/
+/*Permet d'espacer les divs avec la classe questions et bleu des divs de la classe questions et rose*/
 .questions.bleu {
     margin-bottom: 50px;
     border-radius: 10px;
@@ -237,12 +236,12 @@ footer {
 }
 
 
-/*Transition pour l'effet au survol rose*/
+/*Transition pour l'effet au survol rose et ajout d'une bordure transparente*/
 .questions.rose details {
     border: 2px solid transparent;
-    transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;/*Permet d'ajouter une transition de 3secondes de la boxshadow*/
 }
-/*Transition pour l'effet au survol bleu*/
+/*Transition pour l'effet au survol bleu et ajout d'une bordure transparente*/
 .questions.bleu details{
      border: 2px solid transparent;
     transition: box-shadow 0.3s;
@@ -258,6 +257,7 @@ footer {
     color: #ffff;
 
 }
+/*Représente la div qui contient l'image d'agnes dans la page interview*/
 #photoAgnes {
     display: flex;
     justify-content: center;
@@ -274,11 +274,10 @@ footer {
     margin-left: 120px;
     margin-top: 50px;
     margin-right: 20px;
-    
-
+   
 }
 
-/*balise p dans la div avec l'id photoAgnes*/
+/*Représente les paragraphes qui se trouvent dans la div photoAgnes*/
 #photoAgnes p {
     color: #ffffff;
     text-align: center;
@@ -332,9 +331,10 @@ margin-top: 35px;
 }
 /*Au survol du lien de la section présentation entreprise, effet néon bleu*/
 #presentationEntreprise a:hover {
-    box-shadow: 0 0 10px #2f7eac,
-        0 0 20px #2f7eac,
-        0 0 30px #2f7eac,
+    /*Effet d'ombres avec plusieurs couches*/
+    box-shadow: 0 0 10px #2f7eac,/*Première couche qui un décalage horizontal et vertical de 0px, un flou de 10px et une couleur d'ombre*/
+        0 0 20px #2f7eac,/*Deuxieme couche avec un flou de 20px(donc plus flou que la première couche*/
+        0 0 30px #2f7eac,/*3eme couche avec un flou encore plus flou que la couche précédente*/
         0 0 40px #2f7eac,
         0 0 50px #2f7eac;
 }
@@ -370,7 +370,7 @@ hr::before {
     height: 100%;
     background: linear-gradient(270deg, hsla(326, 58%, 39%, 1) 18%, hsla(202, 57%, 43%, 1) 79%);
     animation: borderAnimation 2s linear infinite;
-    /* Animation de la bordure */
+    
 }
 
 @keyframes borderAnimation {
@@ -468,7 +468,7 @@ padding-top: 40px;
     text-align: center;
     font-family: 'Bubblegum Sans', sans-serif;
     font-size: 45px;
-  letter-spacing: 2px;
+  letter-spacing: 2px;/*Espace entre les lettres*/
   padding-top: 40px;
   padding-bottom: 15px;
   

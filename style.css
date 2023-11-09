@@ -425,7 +425,7 @@ padding-top: 40px;
     font-size: 15px;
 
 }
-
+/*Représente le début du titre de la page texte (Découvrir le passé,inspirer le futur) qui est mis en bleu*/
 #texteFrancais h1 #texteBleu{
     text-shadow: 0 0 10px #2f7eac,
         0 0 20px #2f7eac,
@@ -434,7 +434,7 @@ padding-top: 40px;
         0 0 50px #2f7eac;
       
 }
-
+/*Représente la fin du titre de la page texte (les femmes pionnières de l'informatique) qui est mis en rose*/
 #texteFrancais h1 #texteRose{
     text-shadow: 0 0 10px #9c296a,
         0 0 20px #9c296a,
@@ -443,7 +443,7 @@ padding-top: 40px;
         0 0 50px #9c296a;
         
 }
-
+/*Représente le L en début de phrase de la page texte mis en bleu*/
 #texteFrancais p #L{
     font-size: 25px;
     text-shadow: 0 0 10px #9c296a,
@@ -538,7 +538,7 @@ padding-top: 40px;
     background-color: #2d253a;
     
 }
-
+/*Représente le titre conclusion de la page conclusion*/
 #texteConclusion h1{
     color: #ffff;
     text-align: center;
@@ -547,7 +547,7 @@ padding-top: 40px;
     padding-bottom: 15px;
     font-size: 40px;
 }
-
+/*Représente les paragraphes de la page conclusion*/
 #texteConclusion p{
     color: #ffff;
     text-align: justify;

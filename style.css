@@ -440,9 +440,9 @@ padding-top: 40px;
         0 0 20px #9c296a,
         0 0 30px #9c296a,
         0 0 40px #9c296a,
-        0 0 50px #9c296a;
-        
+        0 0 50px #9c296a; 
 }
+
 /*Représente le L en début de phrase de la page texte mis en bleu*/
 #texteFrancais p #L{
     font-size: 25px;
